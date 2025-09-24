@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaze_calAI</title>
+    <style>
+        body {
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .calculator {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Blaze_calAI</h1>
+            <form action="/calculate" method="post">
+                <input type="text" id="num1" name="num1" placeholder="Enter Number 1">
+                <input type="text" id="op" name="op" placeholder="Operator (+, -, *, /)">
+                <input type="text" id="num2" name="num2" placeholder="Enter Number 2">
+                <button type="submit">Calculate</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
